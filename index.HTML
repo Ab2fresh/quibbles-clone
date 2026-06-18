@@ -1,0 +1,205 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quibbles Clone</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <button class="menu-btn" aria-label="Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <div class="logo"><span class="q-logo">Q</span>uibbles</div>
+        <button class="notification-btn" aria-label="Notifications">
+          <i class="fa-regular fa-bell"></i>
+          <span class="notification-badge"></span>
+        </button>
+      </header>
+
+      <div class="search-container">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" placeholder="Search Quibbles" />
+        </div>
+      </div>
+
+      <div class="tags-container">
+        <div class="tag-item active">FUTA</div>
+        <div class="tag-item">NEWS</div>
+        <div class="tag-item">Scholarships</div>
+        <div class="tag-item">Sports</div>
+      </div>
+
+      <main class="main-content">
+        <section class="featured-section">
+          <h2 class="section-title">
+            <i class="fa-solid fa-chart-line"></i> Featured Posts
+          </h2>
+          <div class="featured-slider">
+            <div class="featured-card">
+              <img
+                src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=500&q=80"
+                alt="News Image"
+              />
+              <div class="featured-overlay">
+                <h3>South Africa to start charging Nigeria, others...</h3>
+              </div>
+            </div>
+            <div class="featured-card">
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=500&q=80"
+                alt="Business Image"
+              />
+              <div class="featured-overlay">
+                <h3>Small Business That Are Great...</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <article class="feed-card">
+          <div class="feed-header">
+            <div class="community-avatar gist-bg">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="post-meta">
+              <div class="community-name">gist_corner</div>
+              <div class="post-author">
+                Posted by <span class="author-name">neka</span> • 1 day ago
+              </div>
+            </div>
+            <button class="more-btn">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </div>
+
+          <div class="feed-body">
+            <p class="post-text">
+              I went on date, he said he wasn't hungry for now which made me the
+              only one that ordered.
+            </p>
+            <p class="post-text">
+              He stood up and said he wanted to use the toilet so I believed he
+              has absconded as I've seen similar news on twitter. So I paid for
+              my stuff and told them to pack for me because I would be leaving
+              any moment. He came back ...
+              <span class="read-more">Read More</span>
+            </p>
+
+            <div class="post-media-grid">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80"
+                alt="User media"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80"
+                alt="User media"
+              />
+            </div>
+          </div>
+
+          <div class="feed-actions">
+            <div class="vote-group">
+              <button class="action-btn vote-up">
+                <i class="fa-solid fa-arrow-up"></i>
+                <span class="count">29</span>
+              </button>
+              <button class="action-btn vote-down">
+                <i class="fa-solid fa-arrow-down"></i>
+              </button>
+            </div>
+            <button class="action-btn">
+              <i class="fa-regular fa-comment"></i>
+              <span class="count">39</span>
+            </button>
+            <button class="action-btn">
+              <i class="fa-solid fa-share-nodes"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="feed-card">
+          <div class="feed-header">
+            <div class="community-avatar lifestyle-bg">
+              <i class="fa-solid fa-snowflake"></i>
+            </div>
+            <div class="post-meta">
+              <div class="community-name">Lifestyle</div>
+              <div class="post-author">
+                Posted by <span class="author-name">favykaren</span> • 1 day ago
+              </div>
+            </div>
+            <button class="more-btn">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </div>
+
+          <div class="feed-body">
+            <h3 class="post-title-bold">
+              Why do most people act nice only when there's something to gain
+              from it?
+            </h3>
+          </div>
+
+          <div class="feed-actions">
+            <div class="vote-group">
+              <button class="action-btn vote-up">
+                <i class="fa-solid fa-arrow-up"></i>
+                <span class="count">34</span>
+              </button>
+              <button class="action-btn vote-down">
+                <i class="fa-solid fa-arrow-down"></i>
+              </button>
+            </div>
+            <button class="action-btn">
+              <i class="fa-regular fa-comment"></i>
+              <span class="count">34</span>
+            </button>
+            <button class="action-btn">
+              <i class="fa-solid fa-share-nodes"></i>
+            </button>
+          </div>
+        </article>
+      </main>
+
+      <button class="fab-btn" aria-label="Create Post">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+
+      <nav class="bottom-nav">
+        <a href="#" class="nav-item active">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-fire"></i>
+          <span>Trending</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-regular fa-clock"></i>
+          <span>Latest</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-regular fa-comments"></i>
+          <span>Chat</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-regular fa-user"></i>
+          <span>Profile</span>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>
